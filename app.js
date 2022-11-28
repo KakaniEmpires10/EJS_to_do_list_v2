@@ -10,7 +10,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-// mongoose.connect("mongodb+srv://Alim_Admin:Forget_me@mongol.3ooxda7.mongodb.net/todolistDB", {useNewUrlParser: true});
+// mongoose.connect("mongodb+srv://<atlas_username>:<password>@mongol.3ooxda7.mongodb.net/todolistDB", {useNewUrlParser: true});
 mongoose.connect("mongodb://localhost:27017/todolistDB", {useNewUrlParser: true});
 
 const itemsSchema = {
